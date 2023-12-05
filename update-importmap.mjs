@@ -12,8 +12,8 @@ https
     // HTTP redirects (301, 302, etc) not currently supported, but could be added
     if (res.statusCode >= 200 && res.statusCode < 300) {
       if (
-        res.headers["content-type"] &&
-        res.headers["content-type"].toLowerCase().trim() ===
+        res.headers["Content-Type"] &&
+        res.headers["Content-Type"].toLowerCase().trim() ===
           "application/json"
       ) {
         const moduleName = `@sahil-mfa/single-spa-demo-nav`;
